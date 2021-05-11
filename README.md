@@ -6,7 +6,7 @@ First, fork the repository by clicking on the `Fork` button on the upper right, 
 
 ## Main Board
 
-[](images/gw01-main-keymap.png)
+![Default GW01 main keymap](images/gw01-main-keymap.png)
 
 1) Edit the `config/boards/arm/gw01_main/gw01_main.keymap` file to change your keymap.
 
@@ -34,7 +34,7 @@ First, fork the repository by clicking on the `Fork` button on the upper right, 
 
 ## Macro Board
 
-[](images/gw01-macro-keymap.png)
+![Default GW01 macro keymap](images/gw01-macro-keymap.png)
 
 - Yes, there's only one layer by default. I didn't really know what to put.
 
