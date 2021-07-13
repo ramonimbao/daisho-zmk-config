@@ -6,7 +6,7 @@
 if BOARD_GW01_MACRO
 
 config ZMK_KEYBOARD_NAME
-	default "GW01 (Macro)"
+	default "DaishoPad"
 
 if USB
 
