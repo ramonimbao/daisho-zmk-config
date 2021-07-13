@@ -6,7 +6,7 @@
 if BOARD_GW01_MAIN
 
 config ZMK_KEYBOARD_NAME
-	default "GW01 (Main)"
+	default "Daisho"
 
 if USB
 
