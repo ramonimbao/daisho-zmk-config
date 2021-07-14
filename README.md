@@ -34,7 +34,7 @@ First, fork the repository by clicking on the `Fork` button on the upper right, 
 
 ## DaishoPad
 
-![Default DaishoPad keymap](images/gw01-macro-keymap.png)
+![Default DaishoPad keymap](images/daishopad-keymap.png)
 
 - Yes, there's only one layer by default. I didn't really know what to put.
 
