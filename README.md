@@ -1,14 +1,14 @@
-# ZMK Config for GW01 boards
+# ZMK Config for Daisho and DaishoPad
 
-This is the repository for GW01 boards (main and macro pad).
+This is the repository for the Daisho and DaishoPad.
 
 First, fork the repository by clicking on the `Fork` button on the upper right, then proceed to make any changes you need.
 
 ## Main Board
 
-![Default GW01 main keymap](images/gw01-main-keymap.png)
+![Default Daisho keymap](images/daisho-keymap.png)
 
-1) Edit the `config/boards/arm/gw01_main/gw01_main.keymap` file to change your keymap.
+1) Edit the `config/boards/arm/daisho/daisho.keymap` file to change your keymap.
 
 - https://zmkfirmware.dev/docs/behaviors/key-press
 - https://zmkfirmware.dev/docs/behaviors/layers
@@ -32,13 +32,13 @@ First, fork the repository by clicking on the `Fork` button on the upper right, 
 - I think it's named `NRF52BOOT` or something?
 - Whatever the name, there should be a UF2 file inside. Don't delete or anything, just drag and drop the new firmware file to the mass storage device.
 
-## Macro Board
+## DaishoPad
 
-![Default GW01 macro keymap](images/gw01-macro-keymap.png)
+![Default DaishoPad keymap](images/gw01-macro-keymap.png)
 
 - Yes, there's only one layer by default. I didn't really know what to put.
 
-- Basically the same as above, except edit the file `config/boards/arm/gw01_main/gw01_macro.keymap`.
+- Basically the same as above, except edit the file `config/boards/arm/daishopad/daishopad.keymap`.
 
 - Change the behavior of the rotary encoder by changing the line `sensor-bindings = <&inc_dec_kp XXXX YYYY>;`
 
