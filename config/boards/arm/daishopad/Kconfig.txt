@@ -1,8 +1,8 @@
-# GW01 (main) board configuration
+# DaishoPad board configuration
 
 # Copyright (c) 2020 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-config BOARD_GW01_MAIN
-	bool "GW01 (Main)"
+config BOARD_DAISHOPAD
+	bool "DaishoPad"
 	depends on SOC_NRF52840_QIAA

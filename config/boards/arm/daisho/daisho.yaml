@@ -1,5 +1,5 @@
-identifier: gw01_main
-name: gw01_main
+identifier: daisho
+name: daisho
 type: mcu
 arch: arm
 toolchain:

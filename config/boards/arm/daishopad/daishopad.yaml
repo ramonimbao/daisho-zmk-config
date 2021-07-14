@@ -1,5 +1,5 @@
-identifier: gw01_macro
-name: gw01_macro
+identifier: daishopad
+name: daishopad
 type: mcu
 arch: arm
 toolchain:
