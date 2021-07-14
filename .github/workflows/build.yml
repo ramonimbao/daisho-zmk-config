@@ -41,7 +41,7 @@ jobs:
       - name: Daisho Kconfig file
         run: cat build/zephyr/.config | grep -v "^#" | grep -v "^$"
       - name: Rename zmk.uf2
-        run: cp build/zephyr/zmk.uf2 diasho.uf2
+        run: cp build/zephyr/zmk.uf2 daisho.uf2
       - name: Archive (Daisho)
         uses: actions/upload-artifact@v2
         with:
