@@ -33,31 +33,31 @@ jobs:
         run: west update
       - name: West Zephyr export
         run: west zephyr-export
-      - name: West Build (GW01 Main)
-        run: west build -s zmk/app -b gw01_main -- -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
-      - name: GW01 (Main) DTS File
+      - name: West Build (Daisho)
+        run: west build -s zmk/app -b daisho -- -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
+      - name: Daisho DTS File
         if: ${{ always() }}
-        run: cat -n build/zephyr/gw01_main.dts.pre.tmp
-      - name: GW01 (Main) Kconfig file
+        run: cat -n build/zephyr/daisho.dts.pre.tmp
+      - name: Daisho Kconfig file
         run: cat build/zephyr/.config | grep -v "^#" | grep -v "^$"
       - name: Rename zmk.uf2
-        run: cp build/zephyr/zmk.uf2 gw01_main.uf2
-      - name: Archive (GW01 Main)
+        run: cp build/zephyr/zmk.uf2 diasho.uf2
+      - name: Archive (Daisho)
         uses: actions/upload-artifact@v2
         with:
-          name: gw01_main
-          path: gw01_main.uf2
-      - name: West Build (GW01 Macro)
-        run: west build -s zmk/app -b gw01_macro -- -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
-      - name: GW01 (Macro) DTS File
+          name: daisho
+          path: daisho.uf2
+      - name: West Build (DaishoPad)
+        run: west build -s zmk/app -b daishopad -- -DZMK_CONFIG="${GITHUB_WORKSPACE}/config"
+      - name: DaishoPad DTS File
         if: ${{ always() }}
-        run: cat -n build/zephyr/gw01_macro.dts.pre.tmp
-      - name: GW01 (Macro) Kconfig file
+        run: cat -n build/zephyr/daishopad.dts.pre.tmp
+      - name: DaishoPad Kconfig file
         run: cat build/zephyr/.config | grep -v "^#" | grep -v "^$"
       - name: Rename zmk.uf2
-        run: cp build/zephyr/zmk.uf2 gw01_macro.uf2
-      - name: Archive (GW01 Macro)
+        run: cp build/zephyr/zmk.uf2 daishopad.uf2
+      - name: DaishoPad
         uses: actions/upload-artifact@v2
         with:
-          name: gw01_macro
-          path: gw01_macro.uf2
+          name: daishopad
+          path: daishopad.uf2
